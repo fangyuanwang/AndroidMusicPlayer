@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wangf.musicon">
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/MusicPlayerTheme">
-        <service android:name=".MusicService" />
+        <service android:name="com.wangf.musicon.MusicService" />
         <activity android:name=".MainActivity"
                     android:label="@string/app_name"
                     android:launchMode="singleTop"
